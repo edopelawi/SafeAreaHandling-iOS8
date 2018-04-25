@@ -24,7 +24,9 @@ final class SampleFullscreenViewController: BaseViewController {
 	
 	override func viewWillAppear(_ animated: Bool) {
 		super.viewWillAppear(animated)
+		
 		navigationController?.isNavigationBarHidden = true
+		updateEdgeConstraints()
 	}
 
 	override func viewEdgeConstraints() -> ViewControllerEdgeConstraints? {
