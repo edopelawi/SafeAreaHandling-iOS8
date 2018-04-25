@@ -16,9 +16,17 @@ final class SampleFullscreenViewController: BaseViewController {
 	@IBOutlet private weak var leadingConstraint: NSLayoutConstraint!
 	
 	override func viewDidLoad() {
+		
+		title = "Fullscreen Page"
+		
         super.viewDidLoad()
 		configureConstraints()
     }
+	
+	override func viewWillAppear(_ animated: Bool) {
+		super.viewWillAppear(animated)
+		navigationController?.isNavigationBarHidden = true
+	}
 
 	override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
 		super.viewWillTransition(to: size, with: coordinator)
