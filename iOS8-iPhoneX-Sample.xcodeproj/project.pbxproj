@@ -16,6 +16,7 @@
 		8D0B3DBD20902E2E001783AC /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0B3DBC20902E2E001783AC /* BaseViewController.swift */; };
 		8D0B3DC0209032A8001783AC /* SampleBarScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0B3DBE209032A8001783AC /* SampleBarScreenViewController.swift */; };
 		8D0B3DC1209032A8001783AC /* SampleBarScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D0B3DBF209032A8001783AC /* SampleBarScreenViewController.xib */; };
+		8D0B3DC320903953001783AC /* ViewControllerEdgeConstraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0B3DC220903953001783AC /* ViewControllerEdgeConstraints.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		8D0B3DBC20902E2E001783AC /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		8D0B3DBE209032A8001783AC /* SampleBarScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleBarScreenViewController.swift; sourceTree = "<group>"; };
 		8D0B3DBF209032A8001783AC /* SampleBarScreenViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SampleBarScreenViewController.xib; sourceTree = "<group>"; };
+		8D0B3DC220903953001783AC /* ViewControllerEdgeConstraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerEdgeConstraints.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				8D0B3DA520902494001783AC /* Assets.xcassets */,
 				8D0B3DA720902494001783AC /* LaunchScreen.storyboard */,
 				8D0B3DAA20902494001783AC /* Info.plist */,
+				8D0B3DC220903953001783AC /* ViewControllerEdgeConstraints.swift */,
 				8D0B3DBC20902E2E001783AC /* BaseViewController.swift */,
 				8D0B3DB42090268E001783AC /* SampleFullscreenViewController.swift */,
 				8D0B3DB52090268E001783AC /* SampleFullscreenViewController.xib */,
@@ -149,6 +152,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D0B3DC320903953001783AC /* ViewControllerEdgeConstraints.swift in Sources */,
 				8D0B3DBD20902E2E001783AC /* BaseViewController.swift in Sources */,
 				8D0B3DB62090268E001783AC /* SampleFullscreenViewController.swift in Sources */,
 				8D0B3D9F20902494001783AC /* AppDelegate.swift in Sources */,
