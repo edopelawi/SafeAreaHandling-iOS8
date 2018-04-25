@@ -16,9 +16,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 	func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
 		
-		let mainFrame = UIScreen.main.applicationFrame
+		let windowFrame = UIScreen.main.bounds
 		
-		window = UIWindow(frame: mainFrame)
+		window = UIWindow(frame: windowFrame)
 		window?.makeKeyAndVisible()
 		
 		window?.rootViewController = SampleViewController()
