@@ -21,7 +21,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 		window = UIWindow(frame: windowFrame)
 		window?.makeKeyAndVisible()
 		
-		window?.rootViewController = SampleFullscreenViewController()
+		let rootViewController = SampleFullscreenViewController()
+		let rootNavigationController = UINavigationController(rootViewController: rootViewController)
+		
+		window?.rootViewController = rootNavigationController
 		
 		return true
 	}
