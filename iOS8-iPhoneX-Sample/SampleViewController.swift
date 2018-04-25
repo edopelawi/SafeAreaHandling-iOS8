@@ -17,6 +17,23 @@ final class SampleViewController: UIViewController {
 	
 	override func viewDidLoad() {
         super.viewDidLoad()
+		configureConstraints()
     }
 
+	// MARK: - Private methods
+	
+	private func configureConstraints() {
+		
+		let appDelegate = UIApplication.shared.delegate
+		
+		guard let areaInset = appDelegate?.window??.universalAreaInsets else {
+			return
+		}
+		
+		trailingConstraint.constant = areaInset.left
+		leadingConstraint.constant = areaInset.right
+		
+		bottomConstraint.constant = areaInset.bottom
+		topConstraint.constant = areaInset.top
+	}
 }
