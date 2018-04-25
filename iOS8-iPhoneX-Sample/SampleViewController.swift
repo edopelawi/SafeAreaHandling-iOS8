@@ -8,7 +8,7 @@
 
 import UIKit
 
-final class SampleViewController: UIViewController {
+final class SampleViewController: BaseViewController {
 
 	@IBOutlet private weak var bottomConstraint: NSLayoutConstraint!
 	@IBOutlet private weak var topConstraint: NSLayoutConstraint!
