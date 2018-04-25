@@ -10,8 +10,9 @@ import UIKit
 
 final class SampleFullscreenViewController: BaseViewController {
 
-	@IBOutlet private weak var bottomConstraint: NSLayoutConstraint!
 	@IBOutlet private weak var topConstraint: NSLayoutConstraint!
+	@IBOutlet private weak var bottomConstraint: NSLayoutConstraint!
+	
 	@IBOutlet private weak var trailingConstraint: NSLayoutConstraint!
 	@IBOutlet private weak var leadingConstraint: NSLayoutConstraint!
 	
@@ -19,7 +20,6 @@ final class SampleFullscreenViewController: BaseViewController {
         super.viewDidLoad()
 		
 		title = "Fullscreen Page"
-		configureConstraints()
     }
 	
 	override func viewWillAppear(_ animated: Bool) {
@@ -27,14 +27,14 @@ final class SampleFullscreenViewController: BaseViewController {
 		navigationController?.isNavigationBarHidden = true
 	}
 
-	override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
-		super.viewWillTransition(to: size, with: coordinator)
+	override func viewEdgeConstraints() -> ViewControllerEdgeConstraints? {
 		
-		coordinator.animate(alongsideTransition: { [weak self] context in
-			
-			self?.configureConstraints()
-			
-		}, completion: nil)
+		return ViewControllerEdgeConstraints(
+			top: topConstraint,
+			bottom: bottomConstraint,
+			leading: leadingConstraint,
+			trailing: trailingConstraint
+		)
 	}
 	
 	// MARK: - Private methods
@@ -43,20 +43,5 @@ final class SampleFullscreenViewController: BaseViewController {
 		
 		let nextViewController = SampleBarScreenViewController()
 		self.navigationController?.pushViewController(nextViewController, animated: true)
-	}
-	
-	private func configureConstraints() {
-		
-		let appDelegate = UIApplication.shared.delegate
-		
-		guard let areaInset = appDelegate?.window??.universalAreaInsets else {
-			return
-		}
-		
-		trailingConstraint.constant = areaInset.left
-		leadingConstraint.constant = areaInset.right
-		
-		bottomConstraint.constant = areaInset.bottom
-		topConstraint.constant = areaInset.top
 	}
 }
