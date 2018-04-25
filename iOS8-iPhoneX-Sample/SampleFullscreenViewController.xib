@@ -27,24 +27,40 @@
                     <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wjf-3i-kZZ" userLabel="Description Label">
-                            <rect key="frame" x="20" y="283" width="335" height="101.5"/>
+                            <rect key="frame" x="20" y="252.5" width="335" height="162.5"/>
                             <string key="text">This is content view, inside the background view.
 
-Try running this in iPhone X and normal iPhones to see the difference.</string>
+Try running this in iPhone X and normal iPhones to see the difference.
+
+Press the button below to see how it works with navigation bar:</string>
                             <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <nil key="highlightedColor"/>
                         </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gi5-jK-Jfq">
+                            <rect key="frame" x="101" y="431" width="172" height="38"/>
+                            <color key="backgroundColor" red="1" green="0.83234566450000003" blue="0.47320586440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                            <inset key="contentEdgeInsets" minX="8" minY="8" maxX="8" maxY="8"/>
+                            <state key="normal" title="To The Next Page!">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="navigateToNextPage:" destination="-1" eventType="touchUpInside" id="1R2-rv-WNz"/>
+                            </connections>
+                        </button>
                     </subviews>
-                    <color key="backgroundColor" red="0.65098039220000004" green="0.69411764710000001" blue="0.73725490199999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="backgroundColor" red="0.0" green="0.32852089410000002" blue="0.57488495110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
                         <constraint firstAttribute="trailing" secondItem="wjf-3i-kZZ" secondAttribute="trailing" constant="20" id="2ds-l3-VNq"/>
                         <constraint firstItem="wjf-3i-kZZ" firstAttribute="leading" secondItem="yvi-71-xaF" secondAttribute="leading" constant="20" id="8YS-LT-mSG"/>
+                        <constraint firstItem="gi5-jK-Jfq" firstAttribute="centerX" secondItem="wjf-3i-kZZ" secondAttribute="centerX" id="Aqf-lh-quU"/>
+                        <constraint firstItem="gi5-jK-Jfq" firstAttribute="top" secondItem="wjf-3i-kZZ" secondAttribute="bottom" constant="16" id="fI0-qN-Cps"/>
                         <constraint firstItem="wjf-3i-kZZ" firstAttribute="centerY" secondItem="yvi-71-xaF" secondAttribute="centerY" id="wuk-UP-xBT"/>
                     </constraints>
                 </view>
             </subviews>
-            <color key="backgroundColor" red="0.31764705879999999" green="0.32156862749999998" blue="0.32549019610000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color key="backgroundColor" red="0.0" green="0.98106676339999999" blue="0.57369142770000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstAttribute="bottom" secondItem="yvi-71-xaF" secondAttribute="bottom" id="7VI-Yc-khu"/>
                 <constraint firstItem="yvi-71-xaF" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="JGT-Ng-wCM"/>

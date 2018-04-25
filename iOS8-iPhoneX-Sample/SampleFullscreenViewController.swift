@@ -16,10 +16,9 @@ final class SampleFullscreenViewController: BaseViewController {
 	@IBOutlet private weak var leadingConstraint: NSLayoutConstraint!
 	
 	override func viewDidLoad() {
+        super.viewDidLoad()
 		
 		title = "Fullscreen Page"
-		
-        super.viewDidLoad()
 		configureConstraints()
     }
 	
@@ -39,6 +38,12 @@ final class SampleFullscreenViewController: BaseViewController {
 	}
 	
 	// MARK: - Private methods
+	
+	@IBAction func navigateToNextPage(_ sender: Any) {
+		
+		let nextViewController = SampleBarScreenViewController()
+		self.navigationController?.pushViewController(nextViewController, animated: true)
+	}
 	
 	private func configureConstraints() {
 		
