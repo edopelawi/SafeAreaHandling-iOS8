@@ -3,7 +3,7 @@
 //  iOS8-iPhoneX-Sample
 //
 //  Created by Ricardo Pramana Suranta on 25/04/18.
-//  Copyright © 2018 Ice House. All rights reserved.
+//  Copyright © 2018 Ricardo Pramana Suranta. All rights reserved.
 //
 
 import UIKit

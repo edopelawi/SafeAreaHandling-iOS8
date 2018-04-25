@@ -107,7 +107,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0910;
 				LastUpgradeCheck = 0910;
-				ORGANIZATIONNAME = "Ice House";
+				ORGANIZATIONNAME = "Ricardo Pramana Suranta";
 				TargetAttributes = {
 					8D0B3D9A20902494001783AC = {
 						CreatedOnToolsVersion = 9.1;
@@ -287,10 +287,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = HNEBJPTVTK;
+				DEVELOPMENT_TEAM = GX458V4RKG;
 				INFOPLIST_FILE = "iOS8-iPhoneX-Sample/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.icehousecorp.iOS8-iPhoneX-Sample";
+				PRODUCT_BUNDLE_IDENTIFIER = "net.edopelawi.iOS8-iPhoneX-Sample";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -302,10 +302,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = HNEBJPTVTK;
+				DEVELOPMENT_TEAM = GX458V4RKG;
 				INFOPLIST_FILE = "iOS8-iPhoneX-Sample/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.icehousecorp.iOS8-iPhoneX-Sample";
+				PRODUCT_BUNDLE_IDENTIFIER = "net.edopelawi.iOS8-iPhoneX-Sample";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
