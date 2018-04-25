@@ -24,18 +24,18 @@ class BaseViewController: UIViewController {
 	required init?(coder aDecoder: NSCoder) {
 		super.init(coder: aDecoder)
 	}
-	
+
 	override func viewDidLoad() {
 		super.viewDidLoad()
-		configureConstraints()
+		updateEdgeConstraints()
 	}
-
+	
 	override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
 		super.viewWillTransition(to: size, with: coordinator)
 		
 		coordinator.animate(alongsideTransition: { [weak self] context in
 			
-			self?.configureConstraints()
+			self?.updateEdgeConstraints()
 			
 		}, completion: nil)
 	}
@@ -49,10 +49,12 @@ class BaseViewController: UIViewController {
 		return nil
 	}
 	
+	/**
+	Updates the edge constraints taken from this `viewEdgeConstraints`.
 	
-	// MARK: - Private methods
-	
-	private func configureConstraints() {
+	- warning: Please call this method should the navigation bar visibility gets changed.
+	*/
+	func updateEdgeConstraints() {
 		
 		let appDelegate = UIApplication.shared.delegate
 		
@@ -61,6 +63,24 @@ class BaseViewController: UIViewController {
 			return
 		}
 		
-		edgeConstraints.configure(edgeInsets: areaInset)		
+		let updatedInsets = updateInsetForNavigationBar(initialInsets: areaInset)
+		edgeConstraints.configure(edgeInsets: updatedInsets)
+	}
+	
+	// MARK: - Private methods
+	
+	private func updateInsetForNavigationBar(initialInsets: UIEdgeInsets) -> UIEdgeInsets {
+		
+		guard let navigationController = self.navigationController,
+			!navigationController.isNavigationBarHidden else {
+				return initialInsets
+		}
+		
+		var newInsets = initialInsets
+		
+		let navigationBarFrame = navigationController.navigationBar.frame
+		newInsets.top += navigationBarFrame.height
+		
+		return newInsets
 	}
 }
