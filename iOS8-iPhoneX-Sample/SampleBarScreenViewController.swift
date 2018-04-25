@@ -19,7 +19,6 @@ final class SampleBarScreenViewController: BaseViewController {
         super.viewDidLoad()
 
 		title = "Page with Navigation Bar"
-        // Do any additional setup after loading the view.
     }
 	
 	override func viewWillAppear(_ animated: Bool) {
@@ -27,4 +26,13 @@ final class SampleBarScreenViewController: BaseViewController {
 		self.navigationController?.isNavigationBarHidden = false
 	}
 	
+	override func viewEdgeConstraints() -> ViewControllerEdgeConstraints? {
+		
+		return ViewControllerEdgeConstraints(
+			top: topConstraint,
+			bottom: bottomConstraint,
+			leading: leadingConstraint,
+			trailing: trailingConstraint
+		)
+	}
 }
