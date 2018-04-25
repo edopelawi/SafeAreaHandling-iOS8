@@ -21,7 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 		window = UIWindow(frame: windowFrame)
 		window?.makeKeyAndVisible()
 		
-		window?.rootViewController = SampleViewController()
+		window?.rootViewController = SampleFullscreenViewController()
 		
 		return true
 	}

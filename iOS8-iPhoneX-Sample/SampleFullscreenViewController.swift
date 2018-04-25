@@ -1,5 +1,5 @@
 //
-//  SampleViewController.swift
+//  SampleFullscreenViewController.swift
 //  iOS8-iPhoneX-Sample
 //
 //  Created by Ricardo Pramana Suranta on 25/04/18.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-final class SampleViewController: BaseViewController {
+final class SampleFullscreenViewController: BaseViewController {
 
 	@IBOutlet private weak var bottomConstraint: NSLayoutConstraint!
 	@IBOutlet private weak var topConstraint: NSLayoutConstraint!

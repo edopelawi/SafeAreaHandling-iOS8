@@ -10,8 +10,8 @@
 		8D0B3D9F20902494001783AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0B3D9E20902494001783AC /* AppDelegate.swift */; };
 		8D0B3DA620902494001783AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D0B3DA520902494001783AC /* Assets.xcassets */; };
 		8D0B3DA920902494001783AC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D0B3DA720902494001783AC /* LaunchScreen.storyboard */; };
-		8D0B3DB62090268E001783AC /* SampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0B3DB42090268E001783AC /* SampleViewController.swift */; };
-		8D0B3DB72090268E001783AC /* SampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D0B3DB52090268E001783AC /* SampleViewController.xib */; };
+		8D0B3DB62090268E001783AC /* SampleFullscreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0B3DB42090268E001783AC /* SampleFullscreenViewController.swift */; };
+		8D0B3DB72090268E001783AC /* SampleFullscreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D0B3DB52090268E001783AC /* SampleFullscreenViewController.xib */; };
 		8D0B3DB920902A26001783AC /* UIWindow+UniversalAreaInset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0B3DB820902A26001783AC /* UIWindow+UniversalAreaInset.swift */; };
 		8D0B3DBD20902E2E001783AC /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0B3DBC20902E2E001783AC /* BaseViewController.swift */; };
 /* End PBXBuildFile section */
@@ -22,8 +22,8 @@
 		8D0B3DA520902494001783AC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8D0B3DA820902494001783AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8D0B3DAA20902494001783AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8D0B3DB42090268E001783AC /* SampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleViewController.swift; sourceTree = "<group>"; };
-		8D0B3DB52090268E001783AC /* SampleViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SampleViewController.xib; sourceTree = "<group>"; };
+		8D0B3DB42090268E001783AC /* SampleFullscreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleFullscreenViewController.swift; sourceTree = "<group>"; };
+		8D0B3DB52090268E001783AC /* SampleFullscreenViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SampleFullscreenViewController.xib; sourceTree = "<group>"; };
 		8D0B3DB820902A26001783AC /* UIWindow+UniversalAreaInset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIWindow+UniversalAreaInset.swift"; sourceTree = "<group>"; };
 		8D0B3DBC20902E2E001783AC /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -63,8 +63,8 @@
 				8D0B3DA720902494001783AC /* LaunchScreen.storyboard */,
 				8D0B3DAA20902494001783AC /* Info.plist */,
 				8D0B3DBC20902E2E001783AC /* BaseViewController.swift */,
-				8D0B3DB42090268E001783AC /* SampleViewController.swift */,
-				8D0B3DB52090268E001783AC /* SampleViewController.xib */,
+				8D0B3DB42090268E001783AC /* SampleFullscreenViewController.swift */,
+				8D0B3DB52090268E001783AC /* SampleFullscreenViewController.xib */,
 				8D0B3DB820902A26001783AC /* UIWindow+UniversalAreaInset.swift */,
 			);
 			path = "iOS8-iPhoneX-Sample";
@@ -130,7 +130,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D0B3DA920902494001783AC /* LaunchScreen.storyboard in Resources */,
-				8D0B3DB72090268E001783AC /* SampleViewController.xib in Resources */,
+				8D0B3DB72090268E001783AC /* SampleFullscreenViewController.xib in Resources */,
 				8D0B3DA620902494001783AC /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -143,7 +143,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D0B3DBD20902E2E001783AC /* BaseViewController.swift in Sources */,
-				8D0B3DB62090268E001783AC /* SampleViewController.swift in Sources */,
+				8D0B3DB62090268E001783AC /* SampleFullscreenViewController.swift in Sources */,
 				8D0B3D9F20902494001783AC /* AppDelegate.swift in Sources */,
 				8D0B3DB920902A26001783AC /* UIWindow+UniversalAreaInset.swift in Sources */,
 			);
