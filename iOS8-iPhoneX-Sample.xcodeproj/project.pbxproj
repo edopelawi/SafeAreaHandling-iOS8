@@ -10,6 +10,8 @@
 		8D0B3D9F20902494001783AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0B3D9E20902494001783AC /* AppDelegate.swift */; };
 		8D0B3DA620902494001783AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D0B3DA520902494001783AC /* Assets.xcassets */; };
 		8D0B3DA920902494001783AC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D0B3DA720902494001783AC /* LaunchScreen.storyboard */; };
+		8D0B3DB62090268E001783AC /* SampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0B3DB42090268E001783AC /* SampleViewController.swift */; };
+		8D0B3DB72090268E001783AC /* SampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D0B3DB52090268E001783AC /* SampleViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -18,6 +20,8 @@
 		8D0B3DA520902494001783AC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8D0B3DA820902494001783AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8D0B3DAA20902494001783AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8D0B3DB42090268E001783AC /* SampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleViewController.swift; sourceTree = "<group>"; };
+		8D0B3DB52090268E001783AC /* SampleViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SampleViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,8 @@
 				8D0B3DA520902494001783AC /* Assets.xcassets */,
 				8D0B3DA720902494001783AC /* LaunchScreen.storyboard */,
 				8D0B3DAA20902494001783AC /* Info.plist */,
+				8D0B3DB42090268E001783AC /* SampleViewController.swift */,
+				8D0B3DB52090268E001783AC /* SampleViewController.xib */,
 			);
 			path = "iOS8-iPhoneX-Sample";
 			sourceTree = "<group>";
@@ -118,6 +124,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D0B3DA920902494001783AC /* LaunchScreen.storyboard in Resources */,
+				8D0B3DB72090268E001783AC /* SampleViewController.xib in Resources */,
 				8D0B3DA620902494001783AC /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -129,6 +136,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D0B3DB62090268E001783AC /* SampleViewController.swift in Sources */,
 				8D0B3D9F20902494001783AC /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
