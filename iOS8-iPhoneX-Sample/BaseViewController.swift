@@ -79,7 +79,7 @@ class BaseViewController: UIViewController {
 		var newInsets = initialInsets
 		
 		let navigationBarFrame = navigationController.navigationBar.frame
-		newInsets.top += navigationBarFrame.height
+		newInsets.top += navigationBarFrame.height + navigationBarFrame.origin.y
 		
 		return newInsets
 	}
